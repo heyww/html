@@ -21,7 +21,7 @@
 
         #bg {
             width: 100%;
-            height: 300px;
+            height: 1100px;
             background: linear-gradient(#107DE4, #ffffff);
             z-index: -99;
         }
@@ -31,39 +31,122 @@
             width: 1170px;
             height: 141px;
         }
-        #content{
+
+        #content {
             margin: auto;
             width: 1170px;
             height: 900px;
             background-color: #ffffff;
-            box-shadow:#50BDFE 5px 5px;
+            box-shadow: #BCE5FB 1px 1px 20px 5px;
             /* 待调整 */
         }
-        .bar{
+
+        .bar {
             width: 100%;
             background: #1C6DBB;
             display: inline-block;
             margin: auto;
         }
-        .bar ul{
+
+        .bar ul {
             list-style-type: none;
             overflow: hidden;
         }
-        .bar li{
+
+        .bar li {
             display: inline;
             float: left;
+            text-align: center;
+            font-size: 18px;
         }
-        .bar ul li a{
+        .bar ul li a {
             display: block;
-            width: 85px;
+            width: 87px;
             padding: 6px 5px;
             color: #ffffff;
             text-decoration-line: none;
         }
-        .bar ul li a:hover{
+        .bar ul li a:hover {
             background-color: #50BDFE;
         }
-        
+        .bar ul li ul{
+            display: none;
+        }
+        .bar ul li ul a{
+            width: 87px;
+            padding: 6px 5px;
+            display: block;
+        }
+        .bar ul li:hover ul{
+            display: block;
+            position: absolute;
+        }
+        /* 这个不是很懂 */
+        .bar ul li:hover ul li a{
+            background: #50BDFE;
+            color: #ffffff;
+            width: 97px;
+            text-align: center;
+        }
+        .bar ul li:hover ul li a:hover{
+            background:#1C6DBB;
+            color: #ffffff;
+        }
+        .section {
+            width: 1150px;
+            margin: auto;
+            display: flex;
+        }
+
+        #sec1 {
+            background-color:darksalmon;
+            width: 33%;
+            height: 300px;
+            justify-content: center;
+            padding: 10px;
+        }
+        #sec1 h1{
+            color: #1C6DBB;
+            font-size: 20px;
+            line-height: 35px;
+        }
+        #sec1 hr{
+            color: #1C6DBB;
+            size: 90%;
+            /* 不起效？ */
+        }
+        #sec1 p{
+            font-size: 10px;
+            /* 只有第一个起效 */
+        }
+
+        #pic {
+            background-color: coral;
+            width: 67%;
+            height: 300px;
+            justify-content: center;
+        }
+
+        #sec2 {
+            background-color: chocolate;
+            width: 33%;
+            height: 300px;
+            justify-content: center;
+        }
+
+        #sec3 {
+            background-color: darkmagenta;
+            width: 33%;
+            height: 300px;
+            justify-content: center;
+        }
+
+        #sec4 {
+            background-color: deeppink;
+            width: 34%;
+            height: 300px;
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -72,33 +155,87 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div id="bg">
+        <!-- 头部图片 -->
         <div id="head">
             <img src="./img/logo43.jpg" alt="">
         </div>
+        <!-- 内容 -->
         <div id="content">
+            <!-- 导航栏 -->
             <div class="bar">
                 <ul>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">学校概况</a></li>
-                    <li><a href="">机构设置</a></li>
-                    <li><a href="">人才培养</a></li>
-                    <li><a href="">科学研究</a></li>
-                    <li><a href="">招生工作</a></li>
-                    <li><a href="">就业创业</a></li>
-                    <li><a href="">图书馆</a></li>
-                    <li><a href="">廉政建设</a></li>
-                    <li><a href="">国际交流</a></li>
-                    <li><a href="">综合服务</a></li>
-                    <li><a href="">信息公开</a></li>
+                    <li>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="">学校概况</a>
+                        <ul>
+                            <li><a href="">学校简介</a></li>
+                            <li><a href="">学校章程</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">机构设置</a>
+                    </li>
+                    <li>
+                        <a href="">人才培养</a>
+                    </li>
+                    <li>
+                        <a href="">科学研究</a>
+                    </li>
+                    <li>
+                        <a href="">招生工作</a>
+                    </li>
+                    <li>
+                        <a href="">就业创业</a>
+                    </li>
+                    <li>
+                        <a href="">图书馆</a>
+                    </li>
+                    <li>
+                        <a href="">廉政建设</a>
+                    </li>
+                    <li>
+                        <a href="">国际交流</a>
+                    </li>
+                    <li>
+                        <a href="">综合服务</a>
+                    </li>
+                    <li>
+                        <a href="">信息公开</a>
+                    </li>
                 </ul>
             </div>
+            <!-- 内容第一行 -->
             <div class="section">
-                <div id="sec1"></div>
-                <div id="pic"></div>
-                <div id="sec2"></div>
+                <div id="sec1">
+                        <h1>学校要闻</h1><hr>
+                        <p>
+                            本网评论：圆梦之旅　青春飞扬 08-08<br><hr>
+                            省运会竞技体育组篮球比赛开战 08-08<br><hr>
+                            管乐团将为省运会开幕式奏响国歌 08-04<br><hr>
+                            党报刊发我校教师热议市委全会精神言论 08-03<br><hr>
+                            省运会学校体育组排球比赛落下帷幕 08-03<br><hr>
+                            本网评论：喜迎省运会　喜看大变化 08-02<br><hr>
+                            图片新闻：肇庆端州文化关爱童声合唱夏令营闭营 07-31<br><hr>
+                            省运会竞技体育组男子足球甲组比赛圆满结束 07-30<br><hr>
+                            我校获评全国创新创业典型经验高校 07-29
+                        </p>
+                </div>
+                <!-- 图片轮播 -->
+                <div id="pic">
+
+                </div>
+            </div>
+            <!-- 内容第二行 -->
+            <div class="section">
+                <div id="sec2">
+
+                </div>
                 <div id="sec3"></div>
                 <div id="sec4"></div>
             </div>
+            <!-- 底部内容 -->
             <div id="bottom">
                 <div id="syh"></div>
                 <div id="info">
