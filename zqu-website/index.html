@@ -12,164 +12,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        #bg {
-            width: 100%;
-            height: 1100px;
-            background: linear-gradient(#107DE4, #ffffff);
-            z-index: -99;
-        }
-
-        #head {
-            margin: auto;
-            width: 1170px;
-            height: 141px;
-        }
-
-        #content {
-            margin: auto;
-            width: 1170px;
-            height: 900px;
-            background-color: #ffffff;
-            box-shadow: #BCE5FB 1px 1px 20px 5px;
-            /* 待调整 */
-        }
-
-        .bar {
-            width: 100%;
-            background: #1C6DBB;
-            display: inline-block;
-            margin: auto;
-        }
-
-        .bar ul {
-            list-style-type: none;
-            overflow: hidden;
-        }
-
-        .bar li {
-            display: inline;
-            float: left;
-            text-align: center;
-            font-size: 18px;
-        }
-        .bar ul li a {
-            display: block;
-            width: 87px;
-            padding: 6px 5px;
-            color: #ffffff;
-            text-decoration-line: none;
-        }
-        .bar ul li a:hover {
-            background-color: #50BDFE;
-        }
-        .bar ul li ul{
-            display: none;
-        }
-        .bar ul li ul a{
-            width: 87px;
-            padding: 6px 5px;
-            display: block;
-        }
-        .bar ul li:hover ul{
-            display: block;
-            position: absolute;
-        }
-        /* 这个不是很懂 */
-        .bar ul li:hover ul li a{
-            background: #50BDFE;
-            color: #ffffff;
-            width: 97px;
-            text-align: center;
-        }
-        .bar ul li:hover ul li a:hover{
-            background:#1C6DBB;
-            color: #ffffff;
-        }
-        .section {
-            width: 1150px;
-            margin: auto;
-            display: flex;
-        }
-
-        #sec1 {
-            /* background-color:darksalmon; */
-            width: 33%;
-            height: 300px;
-            justify-content: center;
-            padding: 10px;
-        }
-        #sec1 h1{
-            color: #1C6DBB;
-            font-size: 20px;
-            line-height: 35px;
-        }
-        #sec1 hr{
-            /* color: #1C6DBB; */
-            size: 90%;
-            background: #1C6DBB;
-            /* 不起效？ */
-        }
-        #sec1 p{
-            font-size: 15px;
-            line-height: 25px;
-            /* 只有第一个起效 */
-        }
-
-        #pic {
-            background-color: coral;
-            width: 67%;
-            padding: 10px;
-            height: 300px;
-            justify-content: center;
-        }
-
-        #sec2 {
-            /* background-color: chocolate; */
-            width: 33%;
-            padding: 10px;
-            height: 300px;
-            justify-content: center;
-        }
-        #sec2 h1{
-            color: #1C6DBB;
-            font-size: 20px;
-            line-height: 35px;
-        }
-        #sec2 hr{
-            /* color: #1C6DBB; */
-            size: 90%;
-            background: #1C6DBB;
-            /* 不起效？ */
-        }
-        #sec2 p{
-            font-size: 15px;
-            line-height: 25px;
-            /* 只有第一个起效 */
-        }
-
-        #sec3 {
-            background-color: darkmagenta;
-            width: 33%;
-            padding: 10px;
-            height: 300px;
-            justify-content: center;
-        }
-
-        #sec4 {
-            background-color: deeppink;
-            width: 34%;
-            padding: 10px;
-            height: 300px;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/css.css">
 </head>
 
 <body>
@@ -192,8 +35,12 @@
                     <li>
                         <a href="">学校概况</a>
                         <ul>
-                            <li><a href="">学校简介</a></li>
-                            <li><a href="">学校章程</a></li>
+                            <li class="under">
+                                <a href="">学校简介</a>
+                            </li>
+                            <li class="under">
+                                <a href="">学校章程</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -231,16 +78,41 @@
             <!-- 内容第一行 -->
             <div class="section">
                 <div id="sec1">
-                        <h1>学校要闻</h1><hr>
-                        <p>本网评论：圆梦之旅　青春飞扬 08-08<br><hr></p>
-                        <p>省运会竞技体育组篮球比赛开战 08-08<br><hr></p>
-                        <p>管乐团将为省运会开幕式奏响国歌 08-04<br><hr></p>
-                        <p>党报刊发我校教师热议市委全会精神言论 08-03<br><hr></p>
-                        <p>省运会学校体育组排球比赛落下帷幕 08-03<br><hr></p>
-                        <p>本网评论：喜迎省运会　喜看大变化 08-02<br><hr></p>
-                        <p>图片新闻：肇庆端州文化关爱童声合唱夏令 07-31<br><hr></p>
-                        <p>省运会竞技体育组男子足球甲组比赛圆满结束 07-30<br><hr></p>
-                        <p>我校获评全国创新创业典型经验高校 07-29</p>   
+                    <h1>学校要闻</h1>
+                    <hr>
+                    <p>本网评论：圆梦之旅　青春飞扬 08-08
+                        <br>
+                        <hr>
+                    </p>
+                    <p>省运会竞技体育组篮球比赛开战 08-08
+                        <br>
+                        <hr>
+                    </p>
+                    <p>管乐团将为省运会开幕式奏响国歌 08-04
+                        <br>
+                        <hr>
+                    </p>
+                    <p>党报刊发我校教师热议市委全会精神言论 08-03
+                        <br>
+                        <hr>
+                    </p>
+                    <p>省运会学校体育组排球比赛落下帷幕 08-03
+                        <br>
+                        <hr>
+                    </p>
+                    <p>本网评论：喜迎省运会　喜看大变化 08-02
+                        <br>
+                        <hr>
+                    </p>
+                    <p>图片新闻：肇庆端州文化关爱童声合唱夏令 07-31
+                        <br>
+                        <hr>
+                    </p>
+                    <p>省运会竞技体育组男子足球甲组比赛圆满结束 07-30
+                        <br>
+                        <hr>
+                    </p>
+                    <p>我校获评全国创新创业典型经验高校 07-29</p>
                 </div>
                 <!-- 图片轮播 -->
                 <div id="pic">
@@ -249,21 +121,127 @@
             </div>
             <!-- 内容第二行 -->
             <div class="section">
+                <!-- 综合新闻 -->
                 <div id="sec2">
-                        <h1>综合新闻</h1><hr>
-                        <p>经管学子喜获全省创新创业大赛肇庆赛区金奖	08-04<br><hr></p>
-                        <p>校侨联：侨青互交流　双方共发展	08-03<br><hr></p>
-                        <p>砚园班一期二期培养成果结集出版	08-03<br><hr></p>
-                        <p>教科院校友：十年聚会意　一生砚园情	08-03<br><hr></p>
-                        <p>校企合作增添新基地　相互支持促进新发展	07-31<br><hr></p>
-                        <p>乡村振兴规划课题组：考察异地做法	07-26<br><hr></p>
+                    <table class="tab">
+                        <!-- 设置边框 -->
+                        <tr style="border-bottom: 1px solid #1C6DBB;">
+                            <th style="color: #1C6DBB;text-align: left;font-size: 20px;">综合新闻</th>
+                            <th style="color: #1C6DBB;text-align: left;font-size: 10px;">更多>></th>
+                        </tr>
+                        <tr>
+                            <td class="title">经管学子喜获全省创新创业大赛肇庆赛区金奖</td>
+                            <td class="date">08-04</td>
+                        </tr>
+                        <tr>
+                            <td class="title">校侨联：侨青互交流　双方共发展</td>
+                            <td class="date">08-03</td>
+                        </tr>
+                        <tr>
+                            <td class="title">砚园班一期二期培养成果结集出版</td>
+                            <td class="date">08-03</td>
+                        </tr>
+                        <tr>
+                            <td class="title">教科院校友：十年聚会意　一生砚园情</td>
+                            <td class="date">08-03</td>
+                        </tr>
+                        <tr>
+                            <td class="title">校企合作增添新基地　相互支持促进新发展</td>
+                            <td class="date">07-31</td>
+                        </tr>
+                        <tr>
+                            <td class="title">乡村振兴规划课题组：考察异地做法　学习先进经验</td>
+                            <td class="date">07-26</td>
+                        </tr>
+                        </table>
+                        <table class="link">
+                        <tr>
+                            <td style="text-align: left;"><a href="">>>进入砚园新闻网</a></td>
+                            <td style="text-align: right;"><a href="">>>进入砚园文化网</a></td>
+                        </tr>
+                    </table>
                 </div>
-                <div id="sec3"></div>
-                <div id="sec4"></div>
+                <!-- 8行2列，通知公告 -->
+                <div id="sec3">
+                    <table class="tab">
+                        <!-- 设置边框 -->
+                        <tr style="border-bottom: 1px solid #1C6DBB;">
+                            <th style="color: #1C6DBB;text-align: left;font-size: 20px;">通知公告</th>
+                            <th style="color: #1C6DBB;text-align: left;font-size: 10px;">更多>></th>
+                        </tr>
+                        <tr>
+                            <td class="title">2019年教育部社科专项任务项目申报工作的通知</td>
+                            <td class="date">08-03</td>
+                        </tr>
+                        <tr>
+                            <td class="title">2018年教育部社科后期资助项目申报工作的通知</td>
+                            <td class="date">08-01</td>
+                        </tr>
+                        <tr>
+                            <td class="title">2019年教育部人文社科一般项目申报工作的通知</td>
+                            <td class="date">08-01</td>
+                        </tr>
+                        <tr>
+                            <td class="title">关于做好“万人计划”青年拔尖人才申报工作的通知</td>
+                            <td class="date">07-29</td>
+                        </tr>
+                        <tr>
+                            <td class="title">关于2018年暑假期间体育场馆开放时间的通知</td>
+                            <td class="date">07-13</td>
+                        </tr>
+                        <tr>
+                            <td class="title">关于开展肇庆市第十三批西江拔尖人才选拔工作的通知</td>
+                            <td class="date">07-13</td>
+                        </tr>
+                        <tr>
+                            <td class="title">关于2018年暑假后勤服务工作安排的通知</td>
+                            <td class="date">07-11</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="sec4">
+                    <table id="button">
+                        <tr style="border-bottom: 1px solid #1C6DBB;">
+                            <th style="color: #1C6DBB;text-align: left;font-size: 20px;">专题网站</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">校园信息化</a></td>
+                            <td><a href="">信息门户</a></td>
+                            <td><a href="">邮箱</a><p> </p><a href="">OA</a><p> </p><a href="">VPN</a></td>
+                        </tr>
+                        <tr>
+                            <td><a style="color: red;" href="">“两学一做”网</a></td>
+                            <td><a href="">肇庆学院易班</a></td>
+                            <td><a href="">依法治国专题网</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">教务系统管理</a></td>
+                            <td><a href="">学生网络服务</a></td>
+                            <td><a href="">招投标中心</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">干部在线学习中心</a></td>
+                            <td><a href="">继续教育学习网</a></td>
+                            <td><a href="">教学质量监控系统</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">肇庆学院缴费平台</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <!-- 底部内容 -->
             <div id="bottom">
-                <div id="syh"></div>
+                <div id="syh">
+                    <img src="./img/syh.jpg" alt="">
+                </div>
                 <div id="info">
                     <!-- word -->
                     <!-- pic -->
